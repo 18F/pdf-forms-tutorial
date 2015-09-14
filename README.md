@@ -1,8 +1,8 @@
 # pdf-forms-tutorial
 
-Welcome! This repo is a step-by-step guide that provides an in-depth introduction to programatically filling and render PDF forms using modern web standards.
+Welcome! This repo is a step-by-step guide that provides an in-depth introduction to programatically filling and rendering PDF forms using modern web standards.
 
-This tutorial uses a real government form as an example, SF 2809 - Health Benefits Election Form.
+This tutorial uses a real government form as an example, the [SF 2809 - Health Benefits Election Form](https://www.opm.gov/forms/pdf_fill/sf2809.pdf).
 
 If you just want to get up and running, see the quickstart instructions. However, the How To section contains in-depth instructions along with runnable code that will teach you how to "digitize" the SF 2809.
 
@@ -43,7 +43,7 @@ open sf2809.pdf
 
 # How To
 
-Below are the steps to teach you the process of "digitizing" a PDF form. A benefit of digitizing a PDF form us that you can store information as data and not as difficult-to-search files. Think of the filled PDF as one of many possible rendering implementations. The underlying data, once de-coupled from the PDF can be repurposed in useful ways, such as easy reporting. For example, suppose the underlying data is stored in a SQL database:
+Below are the steps to teach you the process of "digitizing" a PDF form. A benefit of digitizing a PDF form is that you can store information as data and not as difficult-to-search files. Think of the filled PDF as one of many possible rendering implementations. The underlying data, once de-coupled from the PDF can be repurposed in useful ways, such as easy reporting. For example, suppose the underlying data is stored in a SQL database:
 
 ```
 SELECT * FROM forms WHERE form.end_date < '2015-09-13';
@@ -51,7 +51,7 @@ SELECT * FROM forms WHERE form.end_date < '2015-09-13';
 
 Try doing that same operation against a folder of PDF files.
 
-Moreovoer, my gaining the ability to represent the information contained in a PDF with semantic HTML, the information and user interface can become much more accessible.
+Moreovoer, by gaining the ability to represent the information contained in a PDF with semantic HTML, the information and user interface can become much more accessible.
 
 At the end of this tutorial, you will have the following:
 
@@ -75,14 +75,16 @@ Included in this repo:
 
 - `sf2809.pdf` - the form we will be filling
 - `generate_json_mappings.rb` - generates a JSON mapping file
+- `server.rb` - a simple REST API
+- `index.html` and `sf2809.js` - a client-side PDF renderer
 
 ## Technical Background
 
-Fillable PDF forms use the "Acrobot Forms Data Format" (FDF) to serialize form data. While FDF is less pretty than other data exchance formats such as JSON, parsing it is already a solved problem. There are libraries for Ruby and Node, for example, that make it easy transform native data structures (e.g. Ruby's Hash or Javascript's Objects) to FDF.
+Fillable PDF forms use the "Acrobot Forms Data Format" (FDF) to serialize form data. While FDF is less pretty than other data exchance formats such as JSON, parsing it is already a solved problem. There are libraries for [Ruby](https://github.com/jkraemer/pdf-forms) and [Node](https://www.npmjs.com/package/fdf), for example, that make it easy to transform FDF to native data structures (e.g. Ruby's Hash or Javascript's Objects) to FDF.
 
 At its core, a software-based PDF filler simply takes data from user input, serializes it to FDF, and applies that FDF to the PDF.
 
-Thankfully, applying FDF to a PDF is also a solved problem thanks to a library called [`pdftk`](https://www.pdflabs.com/tools/pdftk-server/). `pdftk` is a command-line utility for editing and manipulating PDFs. The two `pdftk` commands we care about for PDF filling are:
+Fortunately, applying FDF to a PDF is also a solved problem thanks to a library called [`pdftk`](https://www.pdflabs.com/tools/pdftk-server/). `pdftk` is a command-line utility for editing and manipulating PDFs. The two `pdftk` commands we care about for PDF filling are:
 
 - `dump_data_fields`
 - `fill_form`
@@ -141,9 +143,9 @@ The goal of this step is to create a data dictionary that maps human-friendly fi
 
 FDF fields are typically written by humans when using something like Adobe Acrobat. While these names may or may not be user-friendly, they are almost certainly not machine-friendly. For example, the SF 2809 has an FDF field called `47. email address`. Imagine that as a JSON key and it becomes clear that it will be useful to convert these field names to be more machine-friendly. `47. email address` could be converted to `"47_email_address"`, `"email"`, or `"email_47"`, for example.
 
-One could write a single function that takes human-friendly field names and transforms them. A benefit is that the process is quick and automated. However, because the original field names were likely written by humans, they also likely lack the consistency to be addressable by humans. For this reason, it might be worth spending sometime manually creating the machine-friendly names.
+One could write a single function that takes human-friendly field names and transforms them. A benefit is that the process is quick and automated. However, because the original field names were likely written by humans, they also likely lack the consistency to be addressable by humans. For this reason, it might be worth spending some time manually creating the machine-friendly names.
 
-For this tutorial, however, we're going to use the following function to transform the field names:
+For this tutorial, to save time, we're going to use the following function to transform the field names:
 
 ```ruby
 # downcase it
@@ -331,7 +333,7 @@ post '/sf2809' do
 end
 ```
 
-The request is wrapped in a `begine rescue end` block so that errors can be caught and sent back to the client as JSON.
+The request is wrapped in a `begin rescue end` block so that errors can be caught and sent back to the client as JSON.
 
 To start the server, run `ruby server.rb`. In another terminal tab, run:
 
@@ -347,7 +349,7 @@ Open `sf2809-filled-from-curl.pdf` (and scroll down to the actual form) and noti
 
 ## Render using PDF.js
 
-The goal of this step is to provide a client-side Javascript interface to the API from the previous step which can render the PDF natively using PDF.js.
+The goal of this step is to provide a client-side Javascript interface to the API from the previous step which can render the PDF natively using [PDF.js](https://mozilla.github.io/pdf.js/).
 
 The first step is to create an HTML scaffold:
 
