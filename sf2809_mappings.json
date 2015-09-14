@@ -1,0 +1,854 @@
+[
+  {
+    "pdf_name": "1. Name",
+    "api_name": "1name",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 1.  Enter enrollee's last name, first name, and middle initial."
+  },
+  {
+    "pdf_name": "2. SS",
+    "api_name": "2ss",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 2.  Enter enrollee's social security number."
+  },
+  {
+    "pdf_name": "3. DOB",
+    "api_name": "3dob",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 3.  Enter enrollee's date of birth.  Enter a two digit month and day and a four digit year."
+  },
+  {
+    "pdf_name": "6. address 1",
+    "api_name": "6address1",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 6.  Enter enrollee's street number and name.  Enter apartment number if applicable."
+  },
+  {
+    "pdf_name": "6. address 2",
+    "api_name": "6address2",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 6.  Enter enrollee's city, state, and ZIP code."
+  },
+  {
+    "pdf_name": "8.  medical claim",
+    "api_name": "8medicalclaim",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 8.  Enter the enrollee's Medicare Claim Number."
+  },
+  {
+    "pdf_name": "10. Insurance Name",
+    "api_name": "10insurancename",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 10.  Enter the name of the other insurance the enrollee has."
+  },
+  {
+    "pdf_name": "10. Policy number",
+    "api_name": "10policynumber",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 10.  Enter the policy number for the other insurance the enrollee has."
+  },
+  {
+    "pdf_name": "10.  Tricare",
+    "api_name": "10tricare",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 10.  This is check box one of three.  If the enrollee is covered by insurance other than Medicare, press the space bar to select this box if the other insurance is TRICARE.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "10.  Other",
+    "api_name": "10other",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 10.  This is check box two of three.  If the enrollee is covered by insurance other than Medicare, press the space bar to select this box if the other insurance is not TRICARE or, an FEHB enrollment.  Tab and enter the name of the insurance.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "10.  FEHB",
+    "api_name": "10fehb",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 10.  This is check box three of three.  If the enrollee is covered by insurance other than Medicare, press the space bar to select this box if the other insurance is an FEHB enrollment.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "13. Name",
+    "api_name": "13name",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 13.  Enter last name, first name, and middle initial of the first family member."
+  },
+  {
+    "pdf_name": "15. DOB",
+    "api_name": "15dob",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 15.  Enter the date of birth for the first family member.  Enter a two digit month and day and a four digit year."
+  },
+  {
+    "pdf_name": "18. address 2",
+    "api_name": "18address2",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 18.  Enter city, state, and ZIP code for the first family member."
+  },
+  {
+    "pdf_name": "18. address 1",
+    "api_name": "18address1",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 18.  Enter street number and name for the first family member.  Enter apartment number if applicable."
+  },
+  {
+    "pdf_name": "22. Insurance Name",
+    "api_name": "22insurancename",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 22.  Enter the name of the other insurance the first family member has."
+  },
+  {
+    "pdf_name": "22. Policy number",
+    "api_name": "22policynumber",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 22.  Enter the policy number for the other insurance the first family member has."
+  },
+  {
+    "pdf_name": "22.  Other",
+    "api_name": "22other",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 22.  This is check box two of three.  If the first family member is covered by insurance other than Medicare, press the space bar to select this box if the other insurance is not TRICARE or an FEHB enrollment.  Tab and enter the name of the insurance.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "22.  Tricare",
+    "api_name": "22tricare",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 22.  This is check box one of three.  If the first family member is covered by insurance other than Medicare, press the space bar to select this box if the other insurance is TRICARE.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "22.  FEHB",
+    "api_name": "22fehb",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 22.  This is check box three of three.  If the first family member is covered by insurance other than Medicare, press the space bar to select this box if the other insurance is an FEHB enrollment.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "25. Name",
+    "api_name": "25name",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 25.  Enter last name, first name, and middle initial of the second family member."
+  },
+  {
+    "pdf_name": "27. DOB",
+    "api_name": "27dob",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 27.  Enter date of birth for the second family member.  Enter a two digit month and day and a four digit year."
+  },
+  {
+    "pdf_name": "30. address 2",
+    "api_name": "30address2",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 30.  Enter city, state, and ZIP code for the second family member."
+  },
+  {
+    "pdf_name": "30. address 1",
+    "api_name": "30address1",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 30.  Enter street number and name for the second family member.  Enter apartment number if applicable."
+  },
+  {
+    "pdf_name": "34. Insurance Name",
+    "api_name": "34insurancename",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 34.  Enter the name of the other insurance the second family member has."
+  },
+  {
+    "pdf_name": "34. Policy number",
+    "api_name": "34policynumber",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 34.  Enter the policy number for the other insurance the second family member has."
+  },
+  {
+    "pdf_name": "34.  Other",
+    "api_name": "34other",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 34.  This is check box two of three.  If the second family member is covered by insurance other than Medicare, press the space bar to select this box if the other insurance is not TRICARE or an FEHB enrollment.  Tab and enter the name of the insurance.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "34.  FEHB",
+    "api_name": "34fehb",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 34.  This is check box three of three.  If the second family member is covered by insurance other than Medicare, press the space bar to select this box if the other insurance is an FEHB enrollment.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "34.  Tricare",
+    "api_name": "34tricare",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 34.  This is check box one of three.  If the second family member is covered by insurance other than Medicare, press the space bar to select this box if the other insurance is TRICARE.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "35. email address",
+    "api_name": "35emailaddress",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 35.  Enter the email address for the second family member.  (If applicable, enter email address of your spouse or adult child.)"
+  },
+  {
+    "pdf_name": "36. Preferred telephone number",
+    "api_name": "36preferredtelephonenumber",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 36.  Enter the preferred telephone number, including area code, for the second family member.  (If applicable, enter preferred phone number of your spouse or adult child.)"
+  },
+  {
+    "pdf_name": "37. Name",
+    "api_name": "37name",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 37.  Enter last name, first name, and middle initial of the third family member."
+  },
+  {
+    "pdf_name": "39. DOB",
+    "api_name": "39dob",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 39.  Enter date of birth for the third family member.  Enter a two digit month and day and a four digit year."
+  },
+  {
+    "pdf_name": "42. address 1",
+    "api_name": "42address1",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 42.  Enter street number and name for the third family member.  Enter apartment number if applicable."
+  },
+  {
+    "pdf_name": "42. address 2",
+    "api_name": "42address2",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 42.  Enter city, state, and ZIP code for the third family member."
+  },
+  {
+    "pdf_name": "46. Insurance Name",
+    "api_name": "46insurancename",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 46.  Enter the name of the other insurance the third family member has."
+  },
+  {
+    "pdf_name": "46. Policy number",
+    "api_name": "46policynumber",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 46.  Enter the policy number for the other insurance the third family member has."
+  },
+  {
+    "pdf_name": "46.  Other",
+    "api_name": "46other",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 46.  This is check box two of three.  If the third family member is covered by insurance other than Medicare, press the space bar to select this box if the other insurance is not TRICARE or an FEHB enrollment.  Tab and enter the name of the insurance.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "46.  Tricare",
+    "api_name": "46tricare",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 46.  This is check box one of three.  If the third family member is covered by insurance other than Medicare, press the space bar to select this box if the other insurance is TRICARE.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "46.  FEHB",
+    "api_name": "46fehb",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 46.  This is check box three of three.  If the third family member is covered by insurance other than Medicare, press the space bar to select this box if the other insurance is an FEHB enrollment.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "14. SS",
+    "api_name": "14ss",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 14.  Enter social security number of the first family member."
+  },
+  {
+    "pdf_name": "17. relation",
+    "api_name": "17relation",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 17.  Enter the relationship code for the first family member."
+  },
+  {
+    "pdf_name": "26. SS",
+    "api_name": "26ss",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 26.  Enter the social security number of  the second family member."
+  },
+  {
+    "pdf_name": "24. Preferred telephone number",
+    "api_name": "24preferredtelephonenumber",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 24.  Enter the preferred telephone number, including area code, for the first family member.  (If applicable, enter preferred phone number ofyour spouse or adult child.)"
+  },
+  {
+    "pdf_name": "29. relation",
+    "api_name": "29relation",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 29.  Enter the relationship code for the second family member."
+  },
+  {
+    "pdf_name": "38. SS",
+    "api_name": "38ss",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 38.  Enter social security number of the third family member."
+  },
+  {
+    "pdf_name": "41. relation",
+    "api_name": "41relation",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 41.  Enter the relationship code for the third family member."
+  },
+  {
+    "pdf_name": "47. email address",
+    "api_name": "47emailaddress",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 47.  Enter the email address for the third family member.  (If applicable, enter email address of your spouse or adult child.)"
+  },
+  {
+    "pdf_name": "48. Preferred telephone number",
+    "api_name": "48preferredtelephonenumber",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 48.  Enter the preferred telephone number, including area code, for the third family member.  (If applicable, enter preferred phone number of your spouse or adult child.)"
+  },
+  {
+    "pdf_name": "23 email address",
+    "api_name": "23emailaddress",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 23.  Enter the email address for the first family member. (If applicable, enter email address of your spouse or adult child.)"
+  },
+  {
+    "pdf_name": "11 email address",
+    "api_name": "11emailaddress",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 11.  Enter the email address for the enrollee."
+  },
+  {
+    "pdf_name": "12. Preferred telephone number",
+    "api_name": "12preferredtelephonenumber",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 12.  Enter the preferred telephone number, including area code, for the enrollee."
+  },
+  {
+    "pdf_name": "current plan",
+    "api_name": "currentplan",
+    "type": "text",
+    "alt_text": "Part B.  FEHB Plan You Are Currently Enrolled In (if applicable).  Number 1.   Enter the plan name."
+  },
+  {
+    "pdf_name": "enrollment code",
+    "api_name": "enrollmentcode",
+    "type": "text",
+    "alt_text": "Part B.  FEHB Plan You Are Currently Enrolled In.  Number 2.  Enter the enrollment code."
+  },
+  {
+    "pdf_name": "enrollment new",
+    "api_name": "enrollmentnew",
+    "type": "text",
+    "alt_text": "Part C.  FEHB Plan You Are Enrolling In or Changing To.  Number 2.  Enter the enrollment code."
+  },
+  {
+    "pdf_name": "event",
+    "api_name": "event",
+    "type": "text",
+    "alt_text": "Part D.  Event That Permits You To Enroll, Change, or Cancel.  Number 1.  Enter the event code."
+  },
+  {
+    "pdf_name": "event date 1",
+    "api_name": "eventdate1",
+    "type": "text",
+    "alt_text": "Part D.  Event That Permits You To Enroll, Change, or Cancel.  Number 2.  Enter the date of event.  Enter a two digit month and day and a four digit year."
+  },
+  {
+    "pdf_name": "H.  event date 1",
+    "api_name": "heventdate1",
+    "type": "text",
+    "alt_text": "Part H.  Signature.  Number 2.  Enter the date you signed the form.  Enter a two digit month and day and a four digit year."
+  },
+  {
+    "pdf_name": "Part I Date received",
+    "api_name": "partidatereceived",
+    "type": "text",
+    "alt_text": "Part I. To be completed by agency or retirement system.  Number 1.  Enter the date the form was received.  Enter a two digit month and day and a four digit year."
+  },
+  {
+    "pdf_name": "Part I effective date",
+    "api_name": "partieffectivedate",
+    "type": "text",
+    "alt_text": "Part I.  To be completed by agency or retirement system. Number 2.  Enter the effective date of action. Enter a two digit month and day and a four digit year."
+  },
+  {
+    "pdf_name": "Part I telephone",
+    "api_name": "partitelephone",
+    "type": "text",
+    "alt_text": "Part I.   To be completed by agency or retirement system.  Number 3.  Enter the personnel telephone number."
+  },
+  {
+    "pdf_name": "Part I agency address",
+    "api_name": "partiagencyaddress",
+    "type": "text",
+    "alt_text": "Part I.  To be completed by agency or retirement system.  Number 4.  Enter the address of the agency or retirement system."
+  },
+  {
+    "pdf_name": "Part I agency name",
+    "api_name": "partiagencyname",
+    "type": "text",
+    "alt_text": "Part I.  To be completed by agency or retirement system.  Number 4.  Enter the name of the agency or retirement system."
+  },
+  {
+    "pdf_name": "Part I authorizing official",
+    "api_name": "partiauthorizingofficial",
+    "type": "text",
+    "alt_text": "Part I.  To be completed by agency or retirement system.  Number 5.  Enter the name of authorizing official."
+  },
+  {
+    "pdf_name": "Part I payroll office no",
+    "api_name": "partipayrollofficeno",
+    "type": "text",
+    "alt_text": "Part I.  To be completed by agency or retirement system.  Number 7.  Enter the payroll office number."
+  },
+  {
+    "pdf_name": "Part I payroll office Contact",
+    "api_name": "partipayrollofficecontact",
+    "type": "text",
+    "alt_text": "Part I.  To be completed by agency or retirement system.  Number 8.  Enter the payroll office contact."
+  },
+  {
+    "pdf_name": "Part I area code",
+    "api_name": "partiareacode",
+    "type": "text",
+    "alt_text": "Part I.  To be completed by agency or retirement system.  Number 3.  Enter the area code of the personnel telephone number."
+  },
+  {
+    "pdf_name": "Part I telephone number",
+    "api_name": "partitelephonenumber",
+    "type": "text",
+    "alt_text": "Part I.  To be completed by agency or retirement system.  Number 9.  Enter the payroll telephone number."
+  },
+  {
+    "pdf_name": "Part I remarks",
+    "api_name": "partiremarks",
+    "type": "text",
+    "alt_text": "Part I.  To be completed by agency or retirement system.  Enter your remarks."
+  },
+  {
+    "pdf_name": "Print",
+    "api_name": "print",
+    "type": "button",
+    "alt_text": "This is the print button.  Press the enter key to print the form."
+  },
+  {
+    "pdf_name": "Clear",
+    "api_name": "clear",
+    "type": "button",
+    "alt_text": "This is the clear button.  Press the enter key to clear your entries.         END OF FORM."
+  },
+  {
+    "pdf_name": "Save",
+    "api_name": "save",
+    "type": "button",
+    "alt_text": "This is the save button.  Press the enter key to save the form.  You must have the full version of Adobe or a plug in to save your entries."
+  },
+  {
+    "pdf_name": "male",
+    "api_name": "male",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 4.  This is checkbox one of two.  Press the space bar to select this box if enrollee is a male.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "female",
+    "api_name": "female",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 4.  This is checkbox two of two.  Press the space bar to select this box if enrollee is a female.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "married",
+    "api_name": "married",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 5.  This is the YES checkbox.  Press the space bar to select this box if the enrollee is married.  Note",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "not married",
+    "api_name": "notmarried",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 5.  This is the NO checkbox.  Press the space bar to select this box if the enrollee is NOT married.  Note",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "Med A",
+    "api_name": "meda",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 7.  This is checkbox one of three.  Press the space bar to select this box if you, the enrollee, are covered by Medicare Part A.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "Med B",
+    "api_name": "medb",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 7.  This is checkbox two of three.  Press the space bar to select this box if you, the enrollee, are covered by Medicare Part B.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "Med D",
+    "api_name": "medd",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 7.  This is checkbox three of  three.  Press the space bar to select this box if you, the enrollee, are covered by Medicare Part D.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "9.  other insurance",
+    "api_name": "9otherinsurance",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 9. This is the YES checkbox.  Press the space bar to select this box if the enrollee is covered by insurance other than Medicare.  Tab and enter name of insurance in item 10.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "9.  no other",
+    "api_name": "9noother",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 9. This is the No checkbox.  Press the space bar to select this box if the enrollee is NOT covered by insurance, other than Medicare.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "19. Med A",
+    "api_name": "19meda",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 19.  This is check box one of three.  Press the space bar to select this box if the first family member is covered by Medicare Part A.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "19. Med B",
+    "api_name": "19medb",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 19.  This is check box two of three.  Press the space bar to select this box if the first family member is covered by Medicare Part B.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "19. Med D",
+    "api_name": "19medd",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 19.  This is check box three of three.  Press the space bar to select this box if the first family member is covered by Medicare Part D.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "31. Med A",
+    "api_name": "31meda",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 31.  This is check box one of three.  Press the space bar to select this box if the second family member is covered by Medicare Part A.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "31. Med B",
+    "api_name": "31medb",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 31.  This is check box two of three.  Press the space bar to select this box if the second family member is covered by Medicare Part B.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "31.  Med D",
+    "api_name": "31medd",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 31.  This is check box three of three.  Press the space bar to select this box if the second family member is covered by Medicare Part D.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "43. Med A",
+    "api_name": "43meda",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 43.  This is check box one of three.  Press the space bar to select this box if the third family member is covered by Medicare Part A.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "43. Med B",
+    "api_name": "43medb",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 43.  This is check box two of three.  Press the space bar to select this box if the third family member is covered by Medicare Part B.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "43. Med D",
+    "api_name": "43medd",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 43.  This is check box three of three.  Press the space bar to select this box if the third family member is covered by Medicare Part D.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "16. male",
+    "api_name": "16male",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 16.  This is check box one of two.  Press the space bar to select this box if the first family member is a male.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "16. female",
+    "api_name": "16female",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 16.  This is check box two of two.  Press the space bar to select this box if the first family member is a female.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "21.  other insurance",
+    "api_name": "21otherinsurance",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 21. This is the YES check box.  Press the space bar to select this box if the first family member is covered by insurance other than Medicare.  Tab and enter name of insurance in item 22.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "21.  no other",
+    "api_name": "21noother",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 21. This is the No check box.  Press the space bar to select this box if the first family member is not covered by insurance other than Medicare.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "28. female",
+    "api_name": "28female",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 28.  This is check box two of two.  Press the space bar to select this box if the second family member is a female.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "28. male",
+    "api_name": "28male",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 28.  This is check box one of two.  Press the space bar to select this box if the second family member is a male.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "33.  other insurance",
+    "api_name": "33otherinsurance",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 33. This is the YES check box.  Press the space bar to select this box if the second family member is covered by insurance other than Medicare.  Tab and enter name of insurance in item 34.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "33.  no other",
+    "api_name": "33noother",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 33. This is the No check box.  Press the space bar to select this box if the second family member is not covered by insurance other than Medicare.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "40. male",
+    "api_name": "40male",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 40.  This is check box one of two.  Press the space bar to select this box if the third family member is a male.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "40. female",
+    "api_name": "40female",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 40.  This is check box two of two.  Press the space bar to select this box if the third family member is a female.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "45.  other insurance",
+    "api_name": "45otherinsurance",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 45. This is the YES check box.  Press the space bar to select this box if the third family member is covered by insurance other than Medicare.  Tab and enter name of insurance in item 46.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "45.  no other",
+    "api_name": "45noother",
+    "type": "button",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 45. This is the No check box.  Press the space bar to select this box if the third family member is not covered by insurance other than Medicare.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "part e",
+    "api_name": "parte",
+    "type": "button",
+    "alt_text": "Part E. Election NOT to enroll (Employees Only). Press the space bar to select this box if you do NOT want to enroll in the FEHB Program.   When you sign the form you certify that you have read and understand the information regarding this election.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "part f",
+    "api_name": "partf",
+    "type": "button",
+    "alt_text": "Part F.  Cancellation of FEHB. Press the space bar to select this box to cancel your enrollment.    When you sign the form you certify that you have read and understand the information regarding cancellation of enrollment.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "part g",
+    "api_name": "partg",
+    "type": "button",
+    "alt_text": "Part G.  Suspension of FEHB (Annuitants or Former Spouses Only). Press the space bar to select this box if you want to suspend your enrollment in the FEHB Program.   When you sign the form you certify that you have read and understand the information regarding suspension of enrollment.",
+    "options": [
+      "1",
+      "Off"
+    ]
+  },
+  {
+    "pdf_name": "New Plan Name",
+    "api_name": "newplanname",
+    "type": "text",
+    "alt_text": "Part C.  FEHB Plan You Are Enrolling In or Changing To.  Number 1.  Enter the plan name."
+  },
+  {
+    "pdf_name": "Enrollee name pg 15",
+    "api_name": "enrolleenamepg15",
+    "type": "text",
+    "alt_text": "Enter the enrollee name."
+  },
+  {
+    "pdf_name": "Date of Birth page 15",
+    "api_name": "dateofbirthpage15",
+    "type": "text",
+    "alt_text": "Enter the enrollee's date of birth."
+  },
+  {
+    "pdf_name": "20.  medicare claim",
+    "api_name": "20medicareclaim",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 20.  Enter the Medicare Claim Number for the first family member."
+  },
+  {
+    "pdf_name": "44.  medicare claim",
+    "api_name": "44medicareclaim",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 44.  Enter the Medicare Claim Number for the third family member."
+  },
+  {
+    "pdf_name": "32.  medicare claim",
+    "api_name": "32medicareclaim",
+    "type": "text",
+    "alt_text": "Part, A,.  Enrollee and Family Member Information.  Number 32.  Enter the Medicare Claim Number for the second family member."
+  },
+  {
+    "pdf_name": "Part I number 9 area code",
+    "api_name": "partinumber9areacode",
+    "type": "text",
+    "alt_text": "Part I.  To be completed by agency or retirement system.  Number 9.  Enter the area code for the Payroll telephone number."
+  }
+]
