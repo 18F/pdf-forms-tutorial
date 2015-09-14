@@ -1,6 +1,10 @@
-# SF 2809 - Health Benefits Election Form
+# pdf-forms-tutorial
 
-A stateless REST API for filling the SF-2809 PDF.
+Welcome! This repo is a step-by-step guide that provides an in-depth introduction to programatically filling and render PDF forms using modern web standards.
+
+This tutorial uses a real government form as an example, SF 2809 - Health Benefits Election Form.
+
+If you just want to get up and running, see the quickstart instructions. However, the How To section contains in-depth instructions along with runnable code that will teach you how to "digitize" the SF 2809.
 
 ## Quickstart
 
