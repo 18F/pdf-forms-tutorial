@@ -98,7 +98,7 @@ To make matters even easier, there is a Ruby gem called [`pdf-forms`](https://gi
 
 The goal of this step is to become familiar with `pdftk` and `pdf-forms` and their output formats.
 
-Run `pdftk sf2809.pdf dump_data_fields`. You should see a lot of entries that look like:
+Run `pdftk sf2809.pdf dump_data_fields`. (You might need to decrypt the PDF first. See this Stack Overflow [answer](https://stackoverflow.com/a/30284852/1238994) ) You should see a lot of entries that look like:
 
 ```
 FieldType: Button
